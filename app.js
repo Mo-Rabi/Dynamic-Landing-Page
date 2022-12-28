@@ -73,10 +73,8 @@ window.addEventListener('scroll', () => {
   //check if the section is in viewport
   for (const section of sectionsArray) {
     const sectionTop = section.getBoundingClientRect().top;
-    const minValue = 0;
-    const maxValue = 250;
     const equivalentLink = document.querySelector(`a[href="#${section.id}"]`) 
-    if (sectionTop > minValue && sectionTop < maxValue) {
+    if (sectionTop > 0 && sectionTop < 250) {
       //add your-active-class class
       section.classList.add('your-active-class')
       //add active class 
